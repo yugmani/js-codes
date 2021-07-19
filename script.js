@@ -61,5 +61,32 @@ const array1 = [
 
 const newArray1 = array1.filter(Boolean).filter(item => item.name.length > 0);
 
-console.log(newArray1);
+// console.log(newArray1);
 // [{ name: 'Keshar' }, { name: 'Mamata' }]
+
+// iterate on the map from 0 to n;
+
+const array2 = [...Array(10)].map((item, index) => index + 1);
+// console.log(array2);
+// (10) [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// Replace all occurances of a word in a string
+
+const string =
+  'I love america. I live in America. I study in america. I work in America';
+
+// console.log(string.replace(/america/gi, 'Nepal'));
+// I love Nepal. I live in Nepal. I study in Nepal. I work in Nepal
+
+// Control flow
+
+let x, y;
+
+// if x is undefined, y = 'nothing' otherwise, y = x;
+y = x || 'Nothing';
+console.log(y); // Nothing
+
+// if y exists do something;
+y && console.log(y); // Nothing
+// if x exists do something otherwise nothing
+x && console.log('x:', x); //  =>no output because x is undefined;
