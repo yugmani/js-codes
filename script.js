@@ -78,15 +78,36 @@ const string =
 // console.log(string.replace(/america/gi, 'Nepal'));
 // I love Nepal. I live in Nepal. I study in Nepal. I work in Nepal
 
-// Control flow
+// Control flow shortcuts
 
 let x, y;
 
 // if x is undefined, y = 'nothing' otherwise, y = x;
 y = x || 'Nothing';
-console.log(y); // Nothing
+// console.log(y); // Nothing
 
 // if y exists do something;
-y && console.log(y); // Nothing
+// y && console.log(y); // Nothing
 // if x exists do something otherwise nothing
-x && console.log('x:', x); //  =>no output because x is undefined;
+// x && console.log('x:', x); //  =>no output because x is undefined;
+
+// Type Conversiton: string to number & viceversa
+
+// string to number
+let string1 = '123';
+// console.log(string1); // 123 =>string
+// console.log(string1 + 321); // 123321
+
+// console.log(+string1); // 123 =>number
+// console.log(+string1 + 321); // 444
+
+let string2 = '';
+// console.log(+string2); // 0 
+
+// number to string
+let num = 7;
+let numToString = 7 + "";
+// console.log(numToString);  // 7 => string
+// console.log(numToString + 100); // 7100
+
+// console.log(num + 100); // 107
