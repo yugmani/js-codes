@@ -135,9 +135,20 @@ let numToString = 7 + "";
 // console.log("%c This is a blue text", "color:blue");
 //  This is a blue text => text color will be blue
 
+// Calculations.
+// console.log(2**3) // 8
+// console.log(2*3)  // 6
+// console.log( 2+(6-1));  // 7
+// console.log(15%4);  // 3
+// console.log(20/6) // 3.3333333333333335
 
 // we can use console.table to show objects in tabular format
-const towns = [{"city":"KTM"}, {"city":"New York"}, {"city":"LA"}, {"city":"London"}];
+const towns = [
+  { city: 'KTM' },
+  { city: 'New York' },
+  { city: 'LA' },
+  { city: 'London' }
+];
 // console.table(towns);
 // -----------------------------
 // |(index)    |  city         |
@@ -148,4 +159,16 @@ const towns = [{"city":"KTM"}, {"city":"New York"}, {"city":"LA"}, {"city":"Lond
 // |  3	       |   "London"    |
 // -----------------------------
 // Array(4)
+
+// ******** Negative Index **********
+
+// Get the items near to last index of an array.
+const numbers = [3, 4, 5, 6, 7, 8, 9];
+
+// console.log(numbers.slice(-1)); // [9]
+// console.log(numbers.slice(-2)); // (2) [8, 9]
+// console.log(numbers.slice(-4, -1)); // (3) [6, 7, 8]
+// console.log(numbers.slice(-4, -2)); // (2) [6, 7]
+
+
 
