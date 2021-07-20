@@ -116,22 +116,36 @@ let numToString = 7 + "";
 // Console in different ways
 
 // %s replaces an element with a string
-console.log("Hello I love %s", "Javascript");
+// console.log("Hello I love %s", "Javascript");
 // Hello I love Javascript
 
 // %d  replaces an element with an integer
-console.log("I have %d dollars", 5);
+// console.log("I have %d dollars", 5);
 // I have 5 dollars.
 
 // %f  replaces an element with a float
-console.log("I paid $ %f for a cup of coffee", 1.75);
+// console.log("I paid $ %f for a cup of coffee", 1.75);
 // I paid $ 1.75 for a cup of coffee
 
 // %(o|O) | element is displayed as an object.
-console.log("Hello %o", {"name":"Shaya"});
+// console.log("Hello %o", {"name":"Shaya"});
 // Hello {name: "Shaya"}
 
 // %c | Applies the provided CSS
-console.log("%c This is a blue text", "color:blue");
+// console.log("%c This is a blue text", "color:blue");
 //  This is a blue text => text color will be blue
+
+
+// we can use console.table to show objects in tabular format
+const towns = [{"city":"KTM"}, {"city":"New York"}, {"city":"LA"}, {"city":"London"}];
+// console.table(towns);
+// -----------------------------
+// |(index)    |  city         |
+// -----------------------------
+// | 	0        |   "KTM"       |
+// |  1	       |   "New York"  |
+// |  2	       |   "LA"        |
+// |  3	       |   "London"    |
+// -----------------------------
+// Array(4)
 
