@@ -102,16 +102,15 @@ let string1 = '123';
 // console.log(+string1 + 321); // 444
 
 let string2 = '';
-// console.log(+string2); // 0 
+// console.log(+string2); // 0
 
 // number to string
 let num = 7;
-let numToString = 7 + "";
+let numToString = 7 + '';
 // console.log(numToString);  // 7 => string
 // console.log(numToString + 100); // 7100
 
 // console.log(num + 100); // 107
-
 
 // Console in different ways
 
@@ -170,5 +169,41 @@ const numbers = [3, 4, 5, 6, 7, 8, 9];
 // console.log(numbers.slice(-4, -1)); // (3) [6, 7, 8]
 // console.log(numbers.slice(-4, -2)); // (2) [6, 7]
 
+// ********** Falsy or Truthy Value ********
+//In javascript following values are falsy:  0, "", null, undefined, NaN
+// and of course false except it all are truly
+// use !! operator to get falsy or trult
+
+// console.log(!0); // true
+// console.log(!!0); // false
+
+// console.log(!''); //true
+// console.log(!!''); // false
+
+// console.log(!!null); // false
+// console.log(!!'Hii'); // true
+
+// console.log(!!undefined); // false
+// console.log(!!NaN); // false
+
+// console.log(!!true); // true
+// console.log(!!false); // false
+
+let p = 9;
+let q = null;
+let r = undefined;
+let s = "";
+let t = NaN;
+
+// console.log(!p);    // false;
+// console.log(!!p);   //true
+
+// console.log(!q);    //true
+// console.log(!!q); // false
+
+// console.log(!!r);   //false
+
+// console.log(!!s); //false
+// console.log(!!t);   // false
 
 
