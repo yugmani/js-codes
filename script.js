@@ -226,3 +226,20 @@ const iterator = list(0, 10);
 
 // console.log(iterator.next().value); // 2
 
+// function * in javascript
+function* generator(i){
+  yield i;
+  yield i + 10;
+}
+
+const gen = generator(10);
+
+console.log(gen.next().value);
+// 10
+
+console.log(gen.next().value);
+// 20
+
+console.log(gen.next().value);
+// undefined
+
