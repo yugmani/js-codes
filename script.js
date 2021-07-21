@@ -192,7 +192,7 @@ const numbers = [3, 4, 5, 6, 7, 8, 9];
 let p = 9;
 let q = null;
 let r = undefined;
-let s = "";
+let s = '';
 let t = NaN;
 
 // console.log(!p);    // false;
@@ -206,4 +206,23 @@ let t = NaN;
 // console.log(!!s); //false
 // console.log(!!t);   // false
 
+// Yield keyword
+// **********************************
+
+// The yield keyword is used to pause and resume a generator function
+
+function* list(index, length) {
+  while (index < length) {
+    yield index;
+    index++;
+  }
+}
+
+const iterator = list(0, 10);
+// console.log(iterator.next().value);
+// // 0
+
+// console.log(iterator.next().value); // 1
+
+// console.log(iterator.next().value); // 2
 
