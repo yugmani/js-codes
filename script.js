@@ -243,3 +243,19 @@ console.log(gen.next().value);
 console.log(gen.next().value);
 // undefined
 
+// new.target in javascript
+// *****************************
+
+// new.target is used to detect that whether a function or constructor call using new or not.
+// if it is called new it will return reference to constructor or function, else it returns `undefined`.
+
+//In arrow functions, new.target is inherited from the surrounding scope.
+
+function learn(){
+  new.target?console.log("Called using new"):console.log("Called without new")
+}
+
+learn()
+// called without learn
+new learn()
+// Called using new
