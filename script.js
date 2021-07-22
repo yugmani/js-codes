@@ -227,7 +227,7 @@ const iterator = list(0, 10);
 // console.log(iterator.next().value); // 2
 
 // function * in javascript
-function* generator(i){
+function* generator(i) {
   yield i;
   yield i + 10;
 }
@@ -251,25 +251,25 @@ console.log(gen.next().value);
 
 //In arrow functions, new.target is inherited from the surrounding scope.
 
-function learn(){
-  new.target?console.log("Called using new"):console.log("Called without new")
+function learn() {
+  new.target
+    ? console.log('Called using new')
+    : console.log('Called without new');
 }
 
-learn()
+learn();
 // called without learn
-new learn()
+new learn();
 // Called using new
 
 // LABEL Staement
 
 // The labeled statement can be used with break or continue statements. It is prefixing a statement with an identifier which you can refer to:
-loop1:
-for(let i=0; i<5; i++){
-  loop2:
-  for(let j=0;j<5; j++){
-    console.log(i, j)
-    if(i==j) {
-      continue loop1
+loop1: for (let i = 0; i < 5; i++) {
+  loop2: for (let j = 0; j < 5; j++) {
+    console.log(i, j);
+    if (i == j) {
+      continue loop1;
     }
   }
 }
@@ -289,3 +289,22 @@ for(let i=0; i<5; i++){
 // 4 2
 // 4 3
 // 4 4  => i = j = 2
+
+// Rest Parameters Syntax
+//The rest parameter syntax allows a function to accept an indefinite number of arguments as an array,it like variadic function in C.
+
+function parameterRest(...args) {
+  console.log('Args: ', args);
+  console.log('args[0]: ', args[0]);
+  console.log('args[1]: ', args[1]);
+}
+
+// parameterRest(1);
+// Args:  [1]
+// args[0]:  1
+// args[1]:  undefined
+
+// parameterRest(1, 2, 3);
+// Args:  (3) [1, 2, 3]
+// args[0]:  1
+// args[1]:  2
