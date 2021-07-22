@@ -259,3 +259,33 @@ learn()
 // called without learn
 new learn()
 // Called using new
+
+// LABEL Staement
+
+// The labeled statement can be used with break or continue statements. It is prefixing a statement with an identifier which you can refer to:
+loop1:
+for(let i=0; i<5; i++){
+  loop2:
+  for(let j=0;j<5; j++){
+    console.log(i, j)
+    if(i==j) {
+      continue loop1
+    }
+  }
+}
+
+// 0 0
+// 1 0
+// 1 1  => i = j = 1
+// 2 0
+// 2 1
+// 2 2  => i = j = 2
+// 3 0
+// 3 1
+// 3 2
+// 3 3  => i = j = 2
+// 4 0
+// 4 1
+// 4 2
+// 4 3
+// 4 4  => i = j = 2
